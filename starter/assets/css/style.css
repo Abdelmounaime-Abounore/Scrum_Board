@@ -8,20 +8,7 @@
     background-size: 360px;
     background-position: right bottom;
 }
-.page-header {
-    font-size: 20px;
-}
-.nav-link {
-    padding-left: 0;
-}
-.title {
-    background-color: rgb(97, 126, 97);
-    border-radius: 15px;
-}
-.btn {
-    background-color: rgb(128, 145, 152);
-    border-radius: 18px;
-}
+
 .card {
-    background-color: rgb(231, 231, 240);
+    background-color: #CAEBF2;;
 }
