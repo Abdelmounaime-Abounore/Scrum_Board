@@ -39,7 +39,7 @@
 				</div>
 				
 				<div class="d-flex align-items-center">
-					<button class="btn btn-success rounded-pill"><i class=""></i> Add Task +</a>
+					<button class="btn btn-success  rounded-pill"data-bs-toggle="modal" data-bs-target="#exampleModal"> Add Task<i class="bi bi-plus"></i></button>
 				</div>
 			</div>
 			
@@ -301,9 +301,88 @@
 	<!-- END #app -->
 	
 	<!-- TASK MODAL -->
-	<div class="modal fade" id="modal-task">
+	<!-- <div class="modal fade" id="modal-task"> -->
 		<!-- Modal content goes here -->
-	</div>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header bg-secondary text-white">
+				  <h5 class="modal-title offset-5" id="exampleModalLabel ">Add task</h5>
+				  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body" style="background-color:#CAEBF2;">
+					<form>
+							<!-- title -->
+					  <div class="form-group mb-3">
+						<label class="col-sm-2 col-form-label">Title</label>
+						<div class="col-sm-12">
+						  <input type="text" class="form-control">
+						</div>
+					  </div>
+					  
+					  <!-- type -->
+					  <fieldset class="form-group">
+						  <div class="">
+							  <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+							  <div class="col-sm-10">
+								  <div class="form-check m-3">  
+									  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+									  <label class="form-check-label" for="gridRadios1">
+									  Feature
+									  </label>
+								  </div>
+								  <div class="form-check m-3">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+									<label class="form-check-label" for="gridRadios2">
+									  Bug
+									</label>
+								  </div>
+							  </div>
+						  </div>
+					  </fieldset>
+					  <!-- type -->
+			  
+			          <!-- Priority -->
+					  <div class="form-group">
+						  <label class="col-form-label col-sm-2">Priority</label>
+						  <select class="form-select mb-3">
+							  <option selected>Please select</option>
+							  <option value="1">One</option>
+							  <option value="2">Two</option>
+							  <option value="3">Three</option>
+						  </select>
+						  <!-- Status -->
+						  <label class="col-form-label col-sm-2 pt-0">Status</label>
+						  <select class="form-select p-2 mb-3 ">
+							  <option selected>Please select</option>
+							  <option value="1">One</option>
+							  <option value="2">Two</option>
+							  <option value="3">Three</option>
+						  </select>
+						  <!-- date -->
+						  <div class="d-flex flex-column">
+							  <label class="col-form-label col-sm-2 pt-0">Date</label>
+							  <input class="p-2 border-0 mb-3" type="date" id="start" name="trip-start"
+									 value="2018-07-22"
+								  min="2022-10-01" max="2022-12-31">
+						  </div> 
+						  <!-- Description -->
+						  <div class="form-group">
+							  <label class="col-form-label col-sm-2 pt-0">Description</label>
+							  <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+						  </div>
+					  </div>
+					</form>
+				</div>
+				<div class="modal-footer">
+				  	<button type="submit" class="btn btn-danger">Cancel</button>
+					<button type="submit" class="btn btn-info ml-10">Save</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
 	
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="assets/js/vendor.min.js"></script>
